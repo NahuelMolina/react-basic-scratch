@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template:'./src/index.html'
+      template:'./src/index.handlebars'
     })
   ],
   resolve:{
@@ -21,15 +21,28 @@ module.exports = {
         test:/\.(js|jsx)$/,
         use:['babel-loader'],
         exclude:/node_modules/
+      },
+      {
+        test:/\.handlebars$/,
+        use:'handlebars-loader'
+      },
+      {
+        test:/\.css$/,
+        use:['style-loader','css-loader','sass-loader']
+      },
+      {
+         test: /\.(png|svg|jpg|gif|jpeg)$/,
+         use: [
+           'file-loader',
+         ],
       }
+
     ]
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 3000,
-    hot:true,
-    liveReload:true
+    port: 3000
   },
  
 };
