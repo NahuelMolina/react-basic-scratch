@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class ROOT extends Component {
 
     render(){
-      return (
-          <div class="text-center">
-            <h1>HOLA DESDE ROOT</h1>
+      	return (
+          <div>
+            <h1>No entiendo</h1>
           </div>
         )
     }

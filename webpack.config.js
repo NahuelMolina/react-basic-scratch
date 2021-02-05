@@ -4,12 +4,12 @@ var path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: __dirname + '/built'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template:'./src/index.handlebars'
+      template:'./src/tech.handlebars',
     })
   ],
   resolve:{
@@ -40,7 +40,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'built'),
     compress: true,
     port: 3000
   },

@@ -1,7 +1,6 @@
 import { IconContext } from 'react-icons';
 import { FaYoutube } from 'react-icons/fa';
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 
 
 class YTube extends Component {

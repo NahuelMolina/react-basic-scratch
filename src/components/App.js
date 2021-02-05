@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { render } from 'react';
+
 
 class App extends Component {
 
     state = {
         task:{
-          title:'MyfirstTarsk',
+          title:'A proof to know how the function work',
           done:true
         }
 
@@ -23,7 +23,7 @@ class App extends Component {
           <div>
             <h3>{this.state.task.title}</h3>
             <h1>{this.state.task.done.toString()}</h1>
-            <button onClick={this.handleClick}>
+            <button class="btn btn-info" onClick={this.handleClick}>
               Click!
             </button>
           </div>

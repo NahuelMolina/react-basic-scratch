@@ -61,13 +61,18 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-.cosa {
-  
-}
 
 #home {
-   background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../static/starts-sky-nigth.jpg');
-  
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../static/C.jpg');
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  float:left;
+  max-height: 100%; 
+  overflow: auto; 
 }
 
 
@@ -80,6 +85,7 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
+  background: #222;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
